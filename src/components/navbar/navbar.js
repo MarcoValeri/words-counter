@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <ul>
-                <li className="navbar-logo">Words Number</li>
+                <li className="navbar-logo">Words Counter</li>
             </ul>
         </nav>
     )
