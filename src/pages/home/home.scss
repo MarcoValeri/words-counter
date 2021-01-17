@@ -1,0 +1,22 @@
+#home-container {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "home-header"
+    "home-wordscounter"
+    "home-footer";
+
+    .home-header {
+        grid-area: home-header;
+    }
+
+    .home-wordscounter {
+        grid-area: home-wordscounter;
+    }
+
+    .home-footer {
+        grid-area: home-footer;
+    }
+
+}

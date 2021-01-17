@@ -1,0 +1,66 @@
+// Grid
+#wordscounter-container {
+    display: grid;
+    width: 80%;
+    margin: 2rem auto;
+    border: 1px solid #f7f7f7;
+
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: .5rem;
+    grid-template-areas: 
+    "wordscounter-form wordscounter-result";
+
+    .wordscounter-form {
+        grid-area: wordscounter-form;
+        padding: .5rem;
+
+        textarea {
+            box-sizing: border-box;
+            width: 100%;
+            height: 80vh;
+            padding: 1rem;
+        }
+    }
+    
+    .wordscounter-result {
+        grid-area: wordscounter-result;
+        padding: 1rem .5rem;
+
+        .wordscounter-result-value {
+            font-size: 2rem;
+        }
+
+        .wordscounter-result-characters {
+            font-size: 1.2rem;
+            padding: .5rem;
+            background-color: #123456;
+            color: #fff;
+        }
+    }
+}
+
+/*
+* media queries for devices that have display less than 768px
+*/
+@media (max-width: 768px) {
+
+    // Grid
+    #wordscounter-container {
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-column-gap: .5rem;
+        grid-template-areas: 
+        "wordscounter-result"
+        "wordscounter-form";
+
+        .wordscounter-form {
+            grid-area: wordscounter-form;
+        }
+        
+        .wordscounter-result {
+            grid-area: wordscounter-result;
+        }
+    }
+
+}
