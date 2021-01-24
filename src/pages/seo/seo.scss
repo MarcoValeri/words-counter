@@ -1,0 +1,38 @@
+#seo-container {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "seo-header"
+    "seo-area"
+    "seo-footer";
+
+    .seo-header {
+        grid-area: seo-header;
+    }
+
+    .seo-area {
+        grid-area: seo-area;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 2rem auto;
+        padding: 2rem .5rem;
+        border: 1px solid #f7f7f7;
+
+        input {
+            width: 50%;
+            margin-bottom: 1rem;
+            padding: .3rem;
+            border-radius: 5px;
+        }
+
+        label,
+        input {
+            display: block;
+        }
+    }
+
+    .seo-footer {
+        grid-area: seo-footer;
+    }
+}
